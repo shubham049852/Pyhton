@@ -1,0 +1,9 @@
+n = int(input("Enter a No. greater than or equal to 10:  "))
+if n >= 10:
+    se_t= set()
+    while n != 0:
+        se_t.add(n%10)
+        n = int(n/10)
+    print("Set: ", se_t)
+else:
+    print("Error Number is less than 10")
