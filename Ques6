@@ -1,0 +1,22 @@
+t1 = (1,2,5,7,9,2,4,6,8,10)
+print("Given tuple is:  ", t1)
+
+teven = ()
+for i in range(0, len(t1), 1):
+    if t1[i] % 2 == 0:
+        teven += (t1[i],)
+print("New tuple with only even values: ", teven)
+
+t2 = (11, 13, 15)
+t3 = t1 + t2
+print("Concatenated tuple: ", t3)
+
+max = t3[0]
+min = t3[0]
+for i in range(0, len(t3), 1):
+    if t3[i] > max:
+        max = t3[i]
+    if t3[i] < min:
+        min = t3[i]
+print("Maximum value of tuple : ", max)
+print("Minimum value of tuple : ", min)
