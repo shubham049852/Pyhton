@@ -4,14 +4,14 @@ def triangle(side1, side2, side3):
     if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
         print("Sides form a triangle.")
         perimeter = side1 + side2 + side3
-        s = perimeter/2
-        area =(s*(s-side1)(s-side2)(s-side3))**0.5
+        s = perimeter / 2
+        area = (s * (s - side1)*(s - side2)*(s - side3)) ** 0.5
     else:
         print("Given sides does not form a triangle.")
         quit()
-    return perimeter,area
- 
-    
+    return perimeter, area
+
+
 def main():
     side1 = float(input("Enter the length of side 1: "))
     side2 = float(input("Enter the length of side 2: "))
@@ -19,6 +19,7 @@ def main():
     perimeter, area = triangle(side1, side2, side3)
     print("Perimeter: {} units".format(perimeter))
     print("Area: {} sq. units".format(area))
-    
-if _name_ == "__main__":
-	main()
+
+
+if __name__ == "__main__":
+    main()
